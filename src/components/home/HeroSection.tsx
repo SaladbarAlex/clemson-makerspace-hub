@@ -11,8 +11,17 @@ export function HeroSection() {
       
       <div className="container mx-auto px-4 py-20 lg:py-28 relative">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Makerspace Logo */}
+          <div className="mb-8 animate-fade-in-up">
+            <img
+              src="/Makerspacelogo.png"
+              alt="Clemson Makerspace Logo"
+              className="h-32 sm:h-40 lg:h-48 mx-auto drop-shadow-lg"
+            />
+          </div>
+
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 animate-fade-in-up" style={{ animationDelay: "0.05s" }}>
             <Users className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-foreground">Student-Run</span>
             <span className="text-muted-foreground">|</span>
@@ -21,19 +30,19 @@ export function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             Clemson's hub for{" "}
             <span className="text-gradient-orange">hands-on projects</span>
             {" "}and community
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
             Free access to professional equipment for all Clemson students, faculty, and staff. Learn, create, and innovate.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
             <Button asChild variant="hero" size="xl">
               <Link to="/get-started" className="gap-2">
                 Get Started
@@ -49,7 +58,7 @@ export function HeroSection() {
         </div>
 
         {/* Hero Image/Illustration */}
-        <div className="mt-16 relative animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-16 relative animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
           <div className="relative mx-auto max-w-5xl">
             <div className="aspect-[16/7] rounded-2xl bg-gradient-to-br from-muted to-muted/50 border border-border overflow-hidden shadow-card">
               <div className="absolute inset-0 flex items-center justify-center">
